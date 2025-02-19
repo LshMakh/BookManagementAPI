@@ -167,3 +167,4 @@ C:\Users\lasha\source\repos\BookManagementAPI\BookManagementAPI\obj\Debug\net8.0
 C:\Users\lasha\source\repos\BookManagementAPI\BookManagementAPI\obj\Debug\net8.0\BookManagementAPI.pdb
 C:\Users\lasha\source\repos\BookManagementAPI\BookManagementAPI\obj\Debug\net8.0\BookManagementAPI.genruntimeconfig.cache
 C:\Users\lasha\source\repos\BookManagementAPI\BookManagementAPI\obj\Debug\net8.0\ref\BookManagementAPI.dll
+C:\Users\lasha\source\repos\BookManagementAPI\BookManagementAPI\obj\Debug\net8.0\BookManagementAPI.sourcelink.json

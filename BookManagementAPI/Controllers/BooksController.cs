@@ -46,14 +46,20 @@ namespace BookManagementAPI.Controllers
         }
 
         [HttpPost]
-    public async Task<ActionResult<BookResponse>> CreateBook(Book book)
+    public async Task<ActionResult<BookResponse>> CreateBook(BookAddDto request)
         {
-            if (await _context.Books.AnyAsync(b => b.Title == book.Title && !b.IsDeleted))
+            if (await _context.Books.AnyAsync(b => b.Title == request.Title && !b.IsDeleted))
                 return BadRequest(new { message = "A book with this title already exists" });
 
-            book.IsDeleted = false;
-            book.DeletedAt = null;
-            book.ViewCount = 0;
+            var book = new Book
+            {
+                Title = request.Title,
+                PublicationYear = request.PublicationYear,
+                AuthorName = request.AuthorName,
+                IsDeleted = false,
+                DeletedAt = null,
+                ViewCount = 0
+            };
 
             _context.Books.Add(book);
             await _context.SaveChangesAsync();
@@ -62,48 +68,64 @@ namespace BookManagementAPI.Controllers
         }
 
         [HttpPost("bulk")]
-        public async Task<ActionResult<IEnumerable<Book>>> CreateBooks(List<Book> books)
+        public async Task<ActionResult<IEnumerable<BookResponse>>> CreateBooks(List<BookAddDto> requests)
         {
-           var titles = books.Select(books => books.Title).ToList();
-            if (await _context.Books.AnyAsync(b => titles.Contains(b.Title)))
-                return BadRequest("One or more books already exists");
+            var titles = requests.Select(b => b.Title).ToList();
+            if (await _context.Books.AnyAsync(b => titles.Contains(b.Title) && !b.IsDeleted))
+                return BadRequest(new { message = "One or more books already exist" });
 
+            var books = requests.Select(request => new Book
+            {
+                Title = request.Title,
+                PublicationYear = request.PublicationYear,
+                AuthorName = request.AuthorName,
+                IsDeleted = false,
+                DeletedAt = null,
+                ViewCount = 0
+            }).ToList();
+            
             _context.Books.AddRange(books);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetBooks), books);
+
+            var responses = books.Select(b => BookResponse.FromBook(b)).ToList();
+            return CreatedAtAction(nameof(GetBooks), responses);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateBook(int id, [FromBody] BookUpdateDto request)
         {
-            var book = await _context.Books
+            var existingBook = await _context.Books
                 .FirstOrDefaultAsync(b => b.Id == id && !b.IsDeleted);
 
-            if (book == null)
+            if (existingBook == null)
                 return NotFound(new { message = $"Book with ID {id} not found" });
 
-            if (!string.IsNullOrEmpty(request.Title))
+            if (request.Title != null)
             {
                 if (await _context.Books.AnyAsync(b => b.Title == request.Title && b.Id != id && !b.IsDeleted))
                     return BadRequest(new { message = "A book with this title already exists" });
 
-                book.Title = request.Title;
+                existingBook.Title = request.Title;
             }
 
-            if (request.PublicationYear.HasValue && request.PublicationYear > 0)
+            if (request.PublicationYear.HasValue)
             {
-                book.PublicationYear = request.PublicationYear.Value;
+                existingBook.PublicationYear = request.PublicationYear.Value;
             }
 
-            if (!string.IsNullOrEmpty(request.AuthorName))
+            if (request.AuthorName != null)
             {
-                book.AuthorName = request.AuthorName;
+                existingBook.AuthorName = request.AuthorName;
             }
 
             try
             {
                 await _context.SaveChangesAsync();
-                return Ok(new { message = "Book updated successfully", book = BookResponse.FromBook(book) });
+                return Ok(new
+                {
+                    message = "Book updated successfully",
+                    book = BookResponse.FromBook(existingBook)
+                });
             }
             catch (DbUpdateConcurrencyException)
             {

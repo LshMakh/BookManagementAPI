@@ -70,8 +70,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "book",
-        "Type": "BookManagementAPI.Models.Book",
+        "Name": "request",
+        "Type": "BookManagementAPI.Models.BookAddDto",
         "IsRequired": true
       }
     ],
@@ -191,14 +191,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "books",
-        "Type": "System.Collections.Generic.List\u00601[[BookManagementAPI.Models.Book, BookManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Name": "requests",
+        "Type": "System.Collections.Generic.List\u00601[[BookManagementAPI.Models.BookAddDto, BookManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookManagementAPI.Models.Book, BookManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookManagementAPI.Models.BookResponse, BookManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

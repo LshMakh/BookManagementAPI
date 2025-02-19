@@ -2,8 +2,8 @@
 {
     public class BookUpdateDto
     {
-        public string? Title { get; set; }
-        public int? PublicationYear { get; set; }
-        public string? AuthorName { get; set; }
+        public string? Title { get; set; } = null;
+        public int? PublicationYear { get; set; } = null;
+        public string? AuthorName { get; set; } = null;
     }
 }
