@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\lasha\\source\\repos\\bookmanagementapi\\bookmanagementapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\lasha\\source\\repos\\bookmanagementapi\\bookmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\lasha\\source\\repos\\bookmanagementapi\\bookmanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\lasha\\source\\repos\\bookmanagementapi\\bookmanagementapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\lasha\\source\\repos\\bookmanagementapi\\bookmanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6DFCF4C-F8F7-4248-B90B-5C6C0D1C8308}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BookManagementAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\appsettings.json",
+              "RelativeToolTip": "BookManagementAPI\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-19T17:30:35.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\Services\\JwtService.cs",
+              "RelativeToolTip": "BookManagementAPI\\Services\\JwtService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:29:43.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BookManagementAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:18:47.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\Program.cs",
+              "RelativeToolTip": "BookManagementAPI\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwDQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:17:06.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\lasha\\source\\repos\\BookManagementAPI\\BookManagementAPI\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookManagementAPI\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAiwKoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:03:39.9Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
